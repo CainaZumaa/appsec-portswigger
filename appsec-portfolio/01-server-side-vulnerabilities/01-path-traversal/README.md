@@ -12,4 +12,4 @@ In some cases, an attacker might be able to write to arbitrary files on the serv
 
 ## Write-ups
 
-_No write-ups published yet._
+- [File Path Traversal, Simple Case](./01.path-traversal.md)
