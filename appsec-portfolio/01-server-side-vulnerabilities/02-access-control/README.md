@@ -10,29 +10,41 @@ Access control is the application of constraints on who or what is authorized to
 
 Broken access controls are common and often present a critical security vulnerability. Design and management of access controls is a complex and dynamic problem that applies business, organizational, and legal constraints to a technical implementation. Access control design decisions have to be made by humans so the potential for errors is high.
 
-## Vertical privilege escalation
+## Vertical Privilege Escalation
 
 If a user can gain access to functionality that they are not permitted to access then this is vertical privilege escalation. For example, if a non-administrative user can gain access to an admin page where they can delete user accounts, then this is vertical privilege escalation.
 
-protected functionality
+### Unprotected Functionality
+
 At its most basic, vertical privilege escalation arises where an application does not enforce any protection for sensitive functionality. For example, administrative functions might be linked from an administrator's welcome page but not from a user's welcome page. However, a user might be able to access the administrative functions by browsing to the relevant admin URL.
 
 For example, a website might host sensitive functionality at the following URL:
 
+```
 https://insecure-website.com/admin
-This might be accessible by any user, not only administrative users who have a link to the functionality in their user interface. In some cases, the administrative URL might be disclosed in other locations, such as the robots.txt file:
+```
 
+This might be accessible by any user, not only administrative users who have a link to the functionality in their user interface. In some cases, the administrative URL might be disclosed in other locations, such as the `robots.txt` file:
+
+```
 https://insecure-website.com/robots.txt
+```
+
 Even if the URL isn't disclosed anywhere, an attacker may be able to use a wordlist to brute-force the location of the sensitive functionality.
 
-Unprotected functionality - Continued
+### Unprotected Functionality with Unpredictable URL
+
 In some cases, sensitive functionality is concealed by giving it a less predictable URL. This is an example of so-called "security by obscurity". However, hiding sensitive functionality does not provide effective access control because users might discover the obfuscated URL in a number of ways.
 
 Imagine an application that hosts administrative functions at the following URL:
 
+```
 https://insecure-website.com/administrator-panel-yb556
+```
+
 This might not be directly guessable by an attacker. However, the application might still leak the URL to users. The URL might be disclosed in JavaScript that constructs the user interface based on the user's role:
 
+```javascript
 <script>
 	var isAdmin = false;
 	if (isAdmin) {
@@ -43,9 +55,28 @@ This might not be directly guessable by an attacker. However, the application mi
 		...
 	}
 </script>
+```
 
 This script adds a link to the user's UI if they are an admin user. However, the script containing the URL is visible to all users regardless of their role.
 
+### Parameter-Based Access Control Methods
+
+Some applications determine the user's access rights or role at login, and then store this information in a user-controllable location. This could be:
+
+- A hidden field
+- A cookie
+- A preset query string parameter
+
+The application makes access control decisions based on the submitted value. For example:
+
+```
+https://insecure-website.com/login/home.jsp?admin=true
+https://insecure-website.com/login/home.jsp?role=1
+```
+
+This approach is insecure because a user can modify the value and access functionality they're not authorized to, such as administrative functions.
+
 ## Write-ups
 
-_No write-ups published yet._
+- [Unprotected Admin Functionality](./01.unprotected-admin.md)
+- [Unprotected Admin Functionality with Unpredictable URL](./02.unprotected-admin.md)
