@@ -6,9 +6,11 @@ Practical documentation of my web application security studies.
 
 ## Current Status
 
-| Path                        |
-| --------------------------- |
-| Server-Side Vulnerabilities |
+**Currently studying:** Server-Side Vulnerabilities
+
+| Path                        | Progress |
+| --------------------------- | -------- |
+| Server-Side Vulnerabilities | Started  |
 
 ---
 
@@ -27,6 +29,6 @@ _No write-ups published yet._
 
 ## Resources
 
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security) for excellent free training
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
 
 ---

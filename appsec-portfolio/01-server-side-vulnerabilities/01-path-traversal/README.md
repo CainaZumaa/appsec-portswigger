@@ -9,3 +9,7 @@ Path traversal (also known as directory traversal) vulnerabilities enable an att
 - Sensitive operating system files
 
 In some cases, an attacker might be able to write to arbitrary files on the server, allowing them to modify application data or behavior, and ultimately take full control of the server.
+
+## Write-ups
+
+_No write-ups published yet._
