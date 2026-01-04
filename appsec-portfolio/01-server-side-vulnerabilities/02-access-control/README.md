@@ -80,3 +80,4 @@ This approach is insecure because a user can modify the value and access functio
 
 - [Unprotected Admin Functionality](./01.unprotected-admin.md)
 - [Unprotected Admin Functionality with Unpredictable URL](./02.unprotected-admin.md)
+- [User Role Controlled by Request Parameter](./03.unprotected-admin.md)

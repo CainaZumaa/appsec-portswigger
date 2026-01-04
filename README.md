@@ -24,6 +24,7 @@ Practical documentation of my web application security studies.
 
 - [Unprotected Admin Functionality](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/01.unprotected-admin.md)
 - [Unprotected Admin Functionality with Unpredictable URL](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/02.unprotected-admin.md)
+- [User Role Controlled by Request Parameter](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/03.unprotected-admin.md)
 
 ---
 
