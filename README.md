@@ -1,4 +1,4 @@
-# Application Security Portfolio
+# Application Security
 
 > A comprehensive documentation of practical web application security research and vulnerability analysis.
 
