@@ -2,8 +2,6 @@
 
 > A comprehensive documentation of practical web application security research and vulnerability analysis.
 
-<br>
-
 ## Learning Path
 
 **Current Focus:** Server-Side Vulnerabilities
@@ -11,8 +9,6 @@
 | **Learning Path**           | **Status**  |
 | --------------------------- | ----------- |
 | Server-Side Vulnerabilities | In Progress |
-
-<br>
 
 ## Write-ups
 
@@ -32,8 +28,6 @@
 
 </details>
 
-<br>
-
 ## Stack
 
 | **Category**          | **Tools & Platforms**                                                    |
@@ -41,8 +35,6 @@
 | **Learning Platform** | [PortSwigger Web Security Academy](https://portswigger.net/web-security) |
 | **Testing Tools**     | Burp Suite                                                               |
 | **Documentation**     | Markdown, GitHub                                                         |
-
-<br>
 
 ## Methodology
 
@@ -52,8 +44,6 @@ Each write-up follows a structured approach:
 - **Exploitation** - Step-by-step vulnerability exploitation
 - **Solution** - Final payload and verification
 - **Key Takeaways** - Security insights and lessons learned
-
-<br>
 
 ---
 
