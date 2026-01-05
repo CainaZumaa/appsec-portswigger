@@ -26,10 +26,11 @@
 <details>
 <summary><strong>Access Control</strong></summary>
 
-- [Unprotected Admin Functionality](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/01.unprotected-admin.md)
-- [Unprotected Admin Functionality with Unpredictable URL](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/02.unprotected-admin.md)
-- [User Role Controlled by Request Parameter](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/03.unprotected-admin.md)
-- [User ID Controlled by Request Parameter with Unpredictable User IDs](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/04.unprotected-admin.md)
+- [Unprotected Admin Functionality](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/01.unprotected-admin-functionality.md)
+- [Unprotected Admin Functionality with Unpredictable URL](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/02.unprotected-admin-unpredictable-url.md)
+- [User Role Controlled by Request Parameter](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/03.user-role-controlled-parameter.md)
+- [User ID Controlled by Request Parameter with Unpredictable User IDs](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/04.user-id-controlled-unpredictable.md)
+- [User ID Controlled by Request Parameter with Password Disclosure](./appsec-portfolio/01-server-side-vulnerabilities/02-access-control/05.user-id-controlled-password-disclosure.md)
 
 </details>
 

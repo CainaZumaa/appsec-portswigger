@@ -96,9 +96,22 @@ This is an example of an insecure direct object reference (IDOR) vulnerability. 
 
 In some applications, the exploitable parameter does not have a predictable value. For example, instead of an incrementing number, an application might use globally unique identifiers (GUIDs) to identify users. This may prevent an attacker from guessing or predicting another user's identifier. However, the GUIDs belonging to other users might be disclosed elsewhere in the application where users are referenced, such as user messages or reviews.
 
+### Horizontal to Vertical Privilege Escalation
+
+Often, a horizontal privilege escalation attack can be turned into a vertical privilege escalation, by compromising a more privileged user. For example, a horizontal escalation might allow an attacker to reset or capture the password belonging to another user. If the attacker targets an administrative user and compromises their account, then they can gain administrative access and so perform vertical privilege escalation.
+
+An attacker might be able to gain access to another user's account page using the parameter tampering technique already described for horizontal privilege escalation:
+
+```
+https://insecure-website.com/myaccount?id=456
+```
+
+If the target user is an application administrator, then the attacker will gain access to an administrative account page. This page might disclose the administrator's password or provide a means of changing it, or might provide direct access to privileged functionality.
+
 ## Write-ups
 
-- [Unprotected Admin Functionality](./01.unprotected-admin.md)
-- [Unprotected Admin Functionality with Unpredictable URL](./02.unprotected-admin.md)
-- [User Role Controlled by Request Parameter](./03.unprotected-admin.md)
-- [User ID Controlled by Request Parameter with Unpredictable User IDs](./04.unprotected-admin.md)
+- [Unprotected Admin Functionality](./01.unprotected-admin-functionality.md)
+- [Unprotected Admin Functionality with Unpredictable URL](./02.unprotected-admin-unpredictable-url.md)
+- [User Role Controlled by Request Parameter](./03.user-role-controlled-parameter.md)
+- [User ID Controlled by Request Parameter with Unpredictable User IDs](./04.user-id-controlled-unpredictable.md)
+- [User ID Controlled by Request Parameter with Password Disclosure](./05.user-id-controlled-password-disclosure.md)
