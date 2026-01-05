@@ -1,8 +1,8 @@
 # Application Security
 
 ![Progress](https://img.shields.io/badge/Server--Side_Vulnerabilities-13_of_52-orange)
-![Write-ups](https://img.shields.io/badge/Write--ups-5-blue)
-![Labs Completed](https://img.shields.io/badge/Labs_Completed-5-green)
+![Write-ups](https://img.shields.io/badge/Write--ups-6-blue)
+![Labs Completed](https://img.shields.io/badge/Labs_Completed-6-green)
 
 > A comprehensive documentation of practical web application security research and vulnerability analysis.
 
