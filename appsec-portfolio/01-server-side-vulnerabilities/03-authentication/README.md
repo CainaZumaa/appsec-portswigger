@@ -46,6 +46,13 @@ Username enumeration is when an attacker is able to observe changes in the websi
 
 Username enumeration typically occurs either on the login page, for example, when you enter a valid username but an incorrect password, or on registration forms when you enter a username that is already taken. This greatly reduces the time and effort required to brute-force a login because the attacker is able to quickly generate a shortlist of valid usernames.
 
+## Bypassing two-factor authentication
+
+At times, the implementation of two-factor authentication is flawed to the point where it can be bypassed entirely.
+
+If the user is first prompted to enter a password, and then prompted to enter a verification code on a separate page, the user is effectively in a "logged in" state before they have entered the verification code. In this case, it is worth testing to see if you can directly skip to "logged-in only" pages after completing the first authentication step. Occasionally, you will find that a website doesn't actually check whether or not you completed the second step before loading the page.
+
 ## Write-ups
 
 - [Username Enumeration via Different Responses](./01.username-enumeration.md)
+- [2FA Simple Bypass](./02.simple-bypass-2FA.md)
