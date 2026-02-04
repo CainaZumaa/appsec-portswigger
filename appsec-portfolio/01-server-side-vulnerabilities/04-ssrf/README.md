@@ -48,4 +48,4 @@ These kind of trust relationships, where requests originating from the local mac
 
 ## Write-ups
 
-_No write-ups published yet._
+- [Basic SSRF against the Local Server](./01.ssrf-against-the-server.md)

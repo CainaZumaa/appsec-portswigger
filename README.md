@@ -1,8 +1,8 @@
 # Application Security
 
 ![Progress](https://img.shields.io/badge/Server--Side_Vulnerabilities-29_of_52-orange)
-![Write-ups](https://img.shields.io/badge/Write--ups-8-blue)
-![Labs Completed](https://img.shields.io/badge/Labs_Completed-8-green)
+![Write-ups](https://img.shields.io/badge/Write--ups-9-blue)
+![Labs Completed](https://img.shields.io/badge/Labs_Completed-9-green)
 
 > A comprehensive documentation of practical web application security research and vulnerability analysis.
 
@@ -39,6 +39,13 @@
 
 - [Username Enumeration via Different Responses](./appsec-portfolio/01-server-side-vulnerabilities/03-authentication/01.username-enumeration.md)
 - [2FA Simple Bypass](./appsec-portfolio/01-server-side-vulnerabilities/03-authentication/02.simple-bypass-2FA.md)
+
+</details>
+
+<details>
+<summary><strong>Server-Side Request Forgery (SSRF)</strong></summary>
+
+- [Basic SSRF against the Local Server](./appsec-portfolio/01-server-side-vulnerabilities/04-ssrf/01.ssrf-against-the-server.md)
 
 </details>
 
