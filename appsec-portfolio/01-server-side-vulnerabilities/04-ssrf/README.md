@@ -63,3 +63,4 @@ stockApi=http://192.168.0.68/admin
 ## Write-ups
 
 - [Basic SSRF against the Local Server](./01.ssrf-against-the-server.md)
+- [Basic SSRF against another Back-End System](./02.ssrf-against-back-end-system.md)
