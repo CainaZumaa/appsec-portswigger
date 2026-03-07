@@ -1,8 +1,8 @@
 # Application Security
 
 ![Progress](https://img.shields.io/badge/Server--Side_Vulnerabilities-35_of_52-orange)
-![Write-ups](https://img.shields.io/badge/Write--ups-10-blue)
-![Labs Completed](https://img.shields.io/badge/Labs_Completed-10-green)
+![Write-ups](https://img.shields.io/badge/Write--ups-11-blue)
+![Labs Completed](https://img.shields.io/badge/Labs_Completed-11-green)
 
 > A comprehensive documentation of practical web application security research and vulnerability analysis.
 
@@ -47,6 +47,13 @@
 
 - [Basic SSRF against the Local Server](./appsec-portfolio/01-server-side-vulnerabilities/04-ssrf/01.ssrf-against-the-server.md)
 - [Basic SSRF against another Back-End System](./appsec-portfolio/01-server-side-vulnerabilities/04-ssrf/02.ssrf-against-back-end-system.md)
+
+</details>
+
+<details>
+<summary><strong>File Upload Vulnerabilities</strong></summary>
+
+- [Remote Code Execution via Web Shell Upload](./appsec-portfolio/01-server-side-vulnerabilities/05-file-upload/01.remote-code-execution.md)
 
 </details>
 
